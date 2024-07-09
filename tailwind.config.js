@@ -4,13 +4,13 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#1C2428",
-        secondary: "#ffffff",
-        tertiary: "#CCA767",
+        primary: "#131313",
+        secondary: "#DD5730",
       },
     },
     screens: {
-      xs: "480px",
+      xxs: "375px",
+      xs: "425px",
       ss: "620px",
       sm: "768px",
       md: "1024px",
