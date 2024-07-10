@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "Akira";
+  src: url("/Fonts/AkiraExpanded.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Brigends";
+  src: url("/Fonts/BrigendsExpanded.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

@@ -3,6 +3,10 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        Brigends: ["Brigends", "sans-serif"],
+        Akira: ["Akira", "sans-serif"],
+      },
       colors: {
         primary: "#131313",
         secondary: "#DD5730",
