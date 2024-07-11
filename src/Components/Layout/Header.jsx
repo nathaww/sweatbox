@@ -89,7 +89,7 @@ const Header = () => {
                   );
                 })}
               </div>
-              <div className="absolute inset-0">
+              <div className="absolute inset-0 text-secondary">
                 {item.name.split("").map((l, i) => {
                   return (
                     <motion.span

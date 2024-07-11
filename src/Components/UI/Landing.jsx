@@ -25,7 +25,6 @@ const Landing = () => {
         {
           opacity: 0,
           y: 100,
-          stagger: 0.2,
           duration: 1.2,
         },
         "-=1.2"
@@ -54,17 +53,17 @@ const Landing = () => {
   });
 
   return (
-    <div className="min-h-screen w-screen relative">
-      <div className="bg-white landingDiv rounded-[3rem] w-full overflow-hidden p-2 xxs:p-3 xs:p-4 py-10 lg:p-14 xl:p-16">
+    <div className="min-h-screen w-full relative flex justify-center items-center">
+      <div className="bg-white landingDiv rounded-[3rem] w-full overflow-hidden p-2 xxs:p-3 xs:p-4 py-10 lg:p-14 xl:p-12">
         <div className="flex flex-col sm:flex-row lg:flex-row xl:flex-row items-end gap-y-4 pt-2">
           <div className="w-full h-full flex flex-col  items-start">
             <div className="overflow-hidden uppercase w-max">
-              <h1 className="landingH1 text-4xl xxs:text-[1.8rem] xs:text-[2.4rem] xs:leading-[2.8rem] sm:text-5xl lg:text-7xl xl:text-8xl font-Akira font-extrabold">
+              <h1 className="landingH1 pointer-events-none text-4xl xxs:text-[1.8rem] xs:text-[2.4rem] xs:leading-[2.8rem] sm:text-5xl lg:text-7xl xl:text-8xl font-Akira font-extrabold">
                 You control
               </h1>
             </div>
             <div className="overflow-hidden uppercase w-max">
-              <h1 className="landingH1 text-4xl xxs:text-[1.9rem] xs:text-[2.4rem] xs:leading-[2.8rem] sm:text-5xl lg:text-7xl xl:text-8xl font-Akira font-extrabold">
+              <h1 className="landingH1 pointer-events-none text-4xl xxs:text-[1.9rem] xs:text-[2.4rem] xs:leading-[2.8rem] sm:text-5xl lg:text-7xl xl:text-8xl font-Akira font-extrabold">
                 Your body!
               </h1>
             </div>
@@ -77,7 +76,7 @@ const Landing = () => {
                 alt="arrow image sweatbox"
               />
             </div>
-            <button className="landingBtnSecondary rounded-full font-Akira text-lg xs:text-2xl sm:text-3xl lg:text-3xl xl:text-[2.8rem] py-2 px-8 xs:py-3 xs:px-6 lg:px-12 font-bold text-white bg-secondary">
+            <button className="landingBtnSecondary rounded-full font-Akira text-lg xs:text-2xl sm:text-3xl lg:text-3xl xl:text-[2.8rem] py-2 px-8 xs:py-3 xs:px-6 lg:px-12 lg:py-6 font-bold text-white bg-secondary">
               Join Now
             </button>
           </div>
@@ -130,13 +129,6 @@ const Landing = () => {
               </p>
             </div>
           </div>
-        </div>
-        <div className="absolute -bottom-10 -left-10 z-10">
-          <img
-            src="/Images/dumbbell.png"
-            className="w-7 xs:w-8 lg:w-14 xl:w-48"
-            alt="sweatbox dumbbell image"
-          />
         </div>
       </div>
     </div>

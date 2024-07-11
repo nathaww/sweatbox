@@ -14,7 +14,7 @@ const App = () => {
   requestAnimationFrame(raf);
 
   return (
-    <div className="bg-primary px-2 sm:px-8 lg:px-10 xl:px-12 py-4">
+    <div className="bg-primary px-2 xs:px-2 sm:px-8 lg:px-10 xl:px-12 py-4">
       <Header/>
       <Router>
         <Routes>
