@@ -1,50 +1,113 @@
-import { FaAnglesRight } from "react-icons/fa6";
+import { useRef } from "react";
+import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/src/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Landing = () => {
+  let landingImageSection = useRef(null);
 
-    
+  useGSAP(() => {
+    gsap
+      .timeline({
+        defaults: {
+          ease: "expo.inOut",
+        },
+      })
+      .from(".landingDiv", {
+        opacity: 0,
+        scale: 0.9,
+        duration: 1.2,
+      })
+      .from(
+        ".landingH1",
+        {
+          opacity: 0,
+          y: 100,
+          stagger: 0.2,
+          duration: 1.2,
+        },
+        "-=1.2"
+      )
+      .from(
+        ".landingBtnSecondary",
+        {
+          opacity: 0,
+          x: -100,
+          stagger: 0.1,
+          duration: 1.2,
+        },
+        "-=1.2"
+      );
+    gsap
+      .timeline({
+        scrollTrigger: {
+          trigger: landingImageSection,
+          start: "top center",
+          scrub: 1.9,
+        },
+      })
+      .to(".landingImg", {
+        scale: 1.2,
+      });
+  });
+
   return (
-    <div className="min-h-screen">
-      <div className="bg-white rounded-[3rem] w-full overflow-hidden p-4 xxs:p-6 xs:p-6 py-10 lg:p-14 xl:p-16">
-        <div className="flex flex-col lg:flex-row xl:flex-row items-end gap-y-4 pt-2">
-          <div className="w-full h-full flex flex-col justify- items-start">
+    <div className="min-h-screen w-screen relative">
+      <div className="bg-white landingDiv rounded-[3rem] w-full overflow-hidden p-2 xxs:p-3 xs:p-4 py-10 lg:p-14 xl:p-16">
+        <div className="flex flex-col sm:flex-row lg:flex-row xl:flex-row items-end gap-y-4 pt-2">
+          <div className="w-full h-full flex flex-col  items-start">
             <div className="overflow-hidden uppercase w-max">
-              <h1 className="text-4xl xxs:text-[2.7rem] xs:text-[3.2rem] xs:leading-[2.8rem] sm:text-5xl lg:text-7xl xl:text-8xl font-Akira font-extrabold">
+              <h1 className="landingH1 text-4xl xxs:text-[1.8rem] xs:text-[2.4rem] xs:leading-[2.8rem] sm:text-5xl lg:text-7xl xl:text-8xl font-Akira font-extrabold">
                 You control
               </h1>
             </div>
             <div className="overflow-hidden uppercase w-max">
-              <h1 className="text-4xl xxs:text-[2.7rem] xs:text-[3.2rem] xs:leading-[2.8rem] sm:text-5xl lg:text-7xl xl:text-8xl font-Akira font-extrabold">
+              <h1 className="landingH1 text-4xl xxs:text-[1.9rem] xs:text-[2.4rem] xs:leading-[2.8rem] sm:text-5xl lg:text-7xl xl:text-8xl font-Akira font-extrabold">
                 Your body!
               </h1>
             </div>
           </div>
-          <div className="flex flex-row lg:gap-x-2 justify-start w-full lg:justify-end items-center lg:w-3/5 xl:w-3/5 h-full mb-3">
-            <div className="xl:px-2">
-              <FaAnglesRight className="text-xl xss:text-4xl xs:text-3xl lg:text-5xl xl:text-6xl text-secondary" />
+          <div className="flex flex-row lg:gap-x-2 justify-start w-full lg:justify-end items-center sm:w-3/5 lg:w-3/5 xl:w-3/5 h-full mb-3">
+            <div className="landingBtnSecondary pe-2 xs:pe-2">
+              <img
+                src="/Images/arrowSecondary.png"
+                className="w-7 xs:w-8 lg:w-14 xl:w-14"
+                alt="arrow image sweatbox"
+              />
             </div>
-            <button className="rounded-full font-Akira text-2xl xss:text-2xl xs:text-3xl sm:text-4xl lg:text-3xl xl:text-[2.8rem] py-6 px-12 font-bold text-white bg-secondary">
+            <button className="landingBtnSecondary rounded-full font-Akira text-lg xs:text-2xl sm:text-3xl lg:text-3xl xl:text-[2.8rem] py-2 px-8 xs:py-3 xs:px-6 lg:px-12 font-bold text-white bg-secondary">
               Join Now
             </button>
           </div>
         </div>
-        <p className="text-xl lg:text-4xl xl:text-5xl mb-6 lg:mb-12 lg:mt-6">
-          Lets show you how...
-        </p>
-        <div className="flex flex-col md:flex-row lg:flex-row xl:flex-row justify-between gap-4 lg:gap-8 items-center min-h-[70vh] lg:h-[70vh] lg:mb-6 xl:mb-8">
+        <div className="overflow-hidden w-max mb-3 lg:mb-12 lg:mt-6">
+          <p className="landingH1 text-xl lg:text-4xl xl:text-5xl lg:mb-2">
+            Lets show you how...
+          </p>
+        </div>
+        <div
+          ref={(el) => (landingImageSection = el)}
+          className="flex flex-col ss:flex-row sm:flex-row lg:flex-row xl:flex-row justify-between gap-4 lg:gap-8 items-center min-h-[70vh] ss:h-[70vh] sm:h-[70vh] lg:h-[70vh] xl:h-[70vh] lg:mb-6 xl:mb-8"
+        >
           <div className="flex flex-col justify-between gap-4 lg:gap-7 items-center h-full w-full lg:w-[40%]">
             <div className="rounded-[3rem] overflow-hidden w-full">
               <img
                 src="/Images/gym1.jpg"
-                alt=""
-                className="h-full w-full object-cover object-center mix-blend-darken scale-125"
+                alt="landing image sweatbox"
+                className="landingImg h-full w-full object-cover object-center"
               />
             </div>
-            <div className="flex-1 flex flex-row justify-between items-center w-full gap-x-1 lg:gap-x-4">
-              <div className="sm:p-2 lg:p-4 xl:p-8 bg-secondary text-white rounded-full">
-                <FaAnglesRight className="text-lg xss:text-xl xs:text-3xl sm:text-3xl lg:text-6xl xl:text-7xl" />
+            <div className="flex-1 flex flex-row justify-between items-center w-full gap-x-1">
+              <div>
+                <img
+                  src="/Images/arrowFilled.png"
+                  alt="arrow image sweatbox"
+                  className="object-cover object-center w-20 lg:w-32 xl:w-44"
+                />
               </div>
-              <button className="rounded-full w-full text-2xl xss:text-2xl sm:text-4xl lg:text-4xl xl:text-[2.5rem] font-Akira font-bold text-white bg-black p-2 xss:p-2 xs:p-2 sm:p-2 lg:p-6 xl:py-12 xl:px-2">
+              <button className="rounded-full w-full text-xl xss:text-xl xs:text-3xl sm:text-3xl lg:text-3xl xl:text-[2.5rem] font-Akira font-bold text-white bg-black p-4 xs:p-4 sm:p-4 lg:p-6 xl:py-12 xl:px-2">
                 Gallery
               </button>
             </div>
@@ -52,10 +115,10 @@ const Landing = () => {
           <div className="h-[70vh] lg:h-full w-full rounded-[3rem] overflow-hidden relative">
             <img
               src="/Images/gym2.jpg"
-              alt=""
-              className="h-full w-full object-cover object-center"
+              alt="landing image sweatbox"
+              className="landingImg h-full w-full object-cover object-center"
             />
-            <div className="absolute bottom-6 left-2 lg:left-10 w-4/5 lg:max-w-md">
+            <div className="absolute bottom-6 left-4 lg:left-10 w-4/5 lg:max-w-md">
               <p className="text-xs sm:text-xs xl:text-base text-white">
                 At Sweatbox, we’re not your average gym. As Addis Ababa’s
                 premier performance center, we’re here to supercharge your
@@ -67,6 +130,13 @@ const Landing = () => {
               </p>
             </div>
           </div>
+        </div>
+        <div className="absolute -bottom-10 -left-10 z-10">
+          <img
+            src="/Images/dumbbell.png"
+            className="w-7 xs:w-8 lg:w-14 xl:w-48"
+            alt="sweatbox dumbbell image"
+          />
         </div>
       </div>
     </div>

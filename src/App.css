@@ -4,3 +4,7 @@
 html {
   scroll-behavior: initial;
 }
+.landingImg {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
