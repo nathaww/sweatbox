@@ -1,3 +1,4 @@
+import AboutUs from "../Components/UI/AboutUs";
 import Gallery from "../Components/UI/Gallery";
 import Landing from "../Components/UI/Landing";
 import Section from "../Components/UI/Section";
@@ -10,6 +11,7 @@ const Home = () => {
       <Section />
       <Services />
       <Gallery />
+      <AboutUs />
     </div>
   );
 };
