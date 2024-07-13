@@ -82,7 +82,7 @@ const Landing = () => {
           </div>
         </div>
         <div className="overflow-hidden w-max mb-3 lg:mb-12 lg:mt-6">
-          <p className="landingH1 text-xl lg:text-4xl xl:text-5xl lg:mb-2">
+          <p className="landingH1 font-Sora text-xl lg:text-4xl xl:text-5xl lg:mb-2">
             Lets show you how...
           </p>
         </div>
@@ -93,7 +93,7 @@ const Landing = () => {
           <div className="flex flex-col justify-between gap-4 lg:gap-7 items-center h-full w-full lg:w-[40%]">
             <div className="rounded-[3rem] overflow-hidden w-full">
               <img
-                src="/Images/gym1.jpg"
+                src="/Images/gym1.webp"
                 alt="landing image sweatbox"
                 className="landingImg h-full w-full object-cover object-center"
               />
@@ -113,12 +113,12 @@ const Landing = () => {
           </div>
           <div className="h-[70vh] lg:h-full w-full rounded-[3rem] overflow-hidden relative">
             <img
-              src="/Images/gym2.jpg"
+              src="/Images/gym2.webp"
               alt="landing image sweatbox"
               className="landingImg h-full w-full object-cover object-center"
             />
             <div className="absolute bottom-6 left-4 lg:left-10 w-4/5 lg:max-w-md">
-              <p className="text-xs sm:text-xs xl:text-base text-white">
+              <p className="text-xs font-Sora sm:text-xs xl:text-base text-white">
                 At Sweatbox, we’re not your average gym. As Addis Ababa’s
                 premier performance center, we’re here to supercharge your
                 fitness journey. Picture a life filled with energy and

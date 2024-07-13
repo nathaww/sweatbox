@@ -61,7 +61,7 @@ const Header = () => {
       </div>
       <div className="lg:flex xl:flex hidden justify-center gap-x-8 items-center">
         {nav.map((item) => (
-          <div key={item.name} className="text-sm">
+          <div key={item.name} className="text-sm font-Sora">
             <motion.a
               initial="initial"
               whileHover="hovered"

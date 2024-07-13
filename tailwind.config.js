@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        Brigends: ["Brigends", "sans-serif"],
+        Sora: ["Sora", "sans-serif"],
         Akira: ["Akira", "sans-serif"],
       },
       colors: {

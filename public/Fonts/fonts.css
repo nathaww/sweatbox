@@ -7,8 +7,8 @@
 }
 
 @font-face {
-  font-family: "Brigends";
-  src: url("/Fonts/BrigendsExpanded.otf") format("opentype");
+  font-family: "Sora";
+  src: url("/Fonts/Sora-Light.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
