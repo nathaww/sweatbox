@@ -87,7 +87,7 @@ const Section = () => {
       <div className="absolute -top-[7%] -left-10 z-10">
         <img
           src="/Images/dumbbell.png"
-          className="w-7 xs:w-8 lg:w-36 xl:w-48"
+          className="w-7 sm:w-28 lg:w-36 xl:w-48"
           alt="sweatbox dumbbell image"
         />
       </div>

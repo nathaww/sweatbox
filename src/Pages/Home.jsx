@@ -1,4 +1,5 @@
 import AboutUs from "../Components/UI/AboutUs";
+import FAQs from "../Components/UI/FAQ";
 import Gallery from "../Components/UI/Gallery";
 import Landing from "../Components/UI/Landing";
 import Section from "../Components/UI/Section";
@@ -12,6 +13,7 @@ const Home = () => {
       <Services />
       <Gallery />
       <AboutUs />
+      <FAQs />
     </div>
   );
 };
