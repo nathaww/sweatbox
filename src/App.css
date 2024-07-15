@@ -8,3 +8,6 @@ html {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
 }
+.imgCar .carousel-root .carousel{
+  height: 100%;
+}

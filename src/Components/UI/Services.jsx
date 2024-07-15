@@ -2,6 +2,7 @@ import { useRef } from "react";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/src/ScrollTrigger";
+import { ServicesDetail } from "../../data";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -46,15 +47,11 @@ const Services = () => {
           start: "top center",
         },
       })
-      .from(
-        ".dayPassSectionH1, .dayPassSectionP",
-        {
-          opacity: 0,
-          y: 100,
-          stagger: 0.2,
-        },
-        "-=1"
-      )
+      .from(".dayPassSectionH1, .dayPassSectionP", {
+        opacity: 0,
+        y: 100,
+        stagger: 0.2,
+      })
       .from(
         ".dayPassCard",
         {
@@ -70,7 +67,7 @@ const Services = () => {
     <div
       id="service"
       ref={(el) => (serviceSection = el)}
-      className="py-8 xs:py-8 ss:py-10 sm:py-10 lg:py-6 xl:py-20 w-full"
+      className="py-8 xs:py-8 ss:py-10 sm:py-10 lg:py-18 xl:py-20 w-full"
     >
       <div className="w-full">
         <div className="overflow-hidden">
@@ -85,88 +82,28 @@ const Services = () => {
         </div>
       </div>
 
-      <div className="lg:h-[90vh] xl:h-[80vh] ss:gap-x-2 sm:gap-x-6 lg:gap-x-6 gap-y-2 ss:gap-y-2 sm:gap-y-6 lg:gap-y-6 xl:gap-y-10 grid grid-cols-1 ss:grid-cols-2 sm:grid-cols-2 lg:grid-cols-2 place-items-center">
-        <div className="serviceCard bg-secondary w-full h-full rounded-[2rem] p-4 xs:p-4 ss:px-4 ss:py-4 sm:px-4 sm:py-4 lg:px-8 xl:px-12 lg:pb-4 xl:py-4 flex flex-col justify-end">
-          <div className="h-[95%] lg:h-[90%] flex flex-col justify-between gap-y-3 xs:gap-y-2 ss:gap-y-2 sm:gap-y-3 lg:gap-y-0">
-            <p className="text-white text-xs lg:text-sm xl:text-base font-Sora">
-              With this plan, you get full access to our gym facilities and work
-              out without a trainer. However, if you need any support, our
-              trainers are readily available upon request. This option is
-              perfect for those who enjoy independent workouts but might need a
-              little support from time to time.
-            </p>
-            <div className="w-full flex flex-col justify-center items-start">
-              <h1 className="text-[1.3rem] leading-6 ss:text-2xl sm:text-2xl lg:text-4xl xl:text-6xl text-white font-Akira">
-                Individual
-              </h1>
-              <h1 className="text-[1.3rem] leading-6 ss:text-2xl sm:text-2xl lg:text-4xl xl:text-6xl text-white font-Akira">
-                Plan
-              </h1>
-            </div>
-          </div>
-        </div>
-        <div className="serviceCard bg-secondary w-full h-full rounded-[2rem] p-4 xs:p-4 ss:px-4 ss:py-4 sm:px-4 sm:py-4 lg:px-8 xl:px-12 lg:pb-4 xl:py-4 flex flex-col justify-end">
-          <div className="h-[95%] lg:h-[90%] flex flex-col justify-between gap-y-3 xs:gap-y-2 ss:gap-y-2 sm:gap-y-3 lg:gap-y-0">
-            <p className="text-white text-xs lg:text-sm xl:text-base font-Sora">
-              On this plan, we have customized training programs that are
-              carefully designed to help you reach your goals, whether it’s
-              losing weight, getting fit, building On this plan, we have
-              customized training programs that are carefully designed strength,
-              or developing your skills in boxing or kickboxing. You’ll work
-              with a dedicated trainer matched to your goals, preferences, and
-              schedule, with options for 1-on-1, 2-on-1, or 3-on-1 sessions.
-            </p>
-            <div className="w-full flex flex-col justify-center items-start">
-              <h1 className="text-[1.3rem] leading-6 ss:text-2xl sm:text-2xl lg:text-4xl xl:text-6xl text-white font-Akira">
-                Personal
-              </h1>
-              <h1 className="text-[1.3rem] leading-6 ss:text-2xl sm:text-2xl lg:text-4xl xl:text-6xl text-white font-Akira">
-                training
-              </h1>
-            </div>
-          </div>
-        </div>
-        <div className="serviceCard bg-secondary w-full h-full rounded-[2rem] p-4 xs:p-4 ss:px-4 ss:py-4 sm:px-4 sm:py-4 lg:px-8 xl:px-12 lg:pb-4 xl:py-4 flex flex-col justify-end">
-          <div className="h-[95%] lg:h-[90%] flex flex-col justify-between gap-y-3 xs:gap-y-2 ss:gap-y-2 sm:gap-y-3 lg:gap-y-0">
-            <p className="text-white text-xs lg:text-sm xl:text-base font-Sora">
-              Group Class Plan, a favorite among our members, is led by
-              certified CrossFit trainers. This plan offers intense group
-              workouts for up to 20 participants. Our structured sessions
-              feature a mix of High-Intensity Interval Training (HIIT), Olympic
-              weightlifting, Strength Training, Gymnastics and Cardiovascular
-              Training.
-            </p>
-            <div className="w-full flex flex-col justify-center items-start">
-              <h1 className="text-[1.3rem] leading-6 ss:text-2xl sm:text-2xl lg:text-4xl xl:text-6xl text-white font-Akira">
-                Group
-              </h1>
-              <h1 className="text-[1.3rem] leading-6 ss:text-2xl sm:text-2xl lg:text-4xl xl:text-6xl text-white font-Akira">
-                class
-              </h1>
-            </div>
-          </div>
-        </div>
-        <div className="serviceCard bg-secondary w-full h-full rounded-[2rem] p-4 xs:p-4 ss:px-4 ss:py-4 sm:px-4 sm:py-4 lg:px-8 xl:px-12 lg:pb-4 xl:py-4 flex flex-col justify-end">
-          <div className="h-[95%] lg:h-[90%] flex flex-col justify-between gap-y-3 xs:gap-y-2 ss:gap-y-2 sm:gap-y-3 lg:gap-y-0">
-            <p className="text-white text-xs lg:text-sm xl:text-base font-Sora">
-              Let your kids discover the joy of movement and build confidence
-              with our Kids Gymnastics program. Led by an experienced gymnast,
-              children will learn funda mental gymnastics skills in a safe and
-              supportive environment. From balancing to tumbling, each session
-              fosters physical development and coordination while promoting
-              teamwork and fun.
-            </p>
+      <div className=" ss:gap-x-2 sm:gap-x-6 lg:gap-x-6 gap-y-2 ss:gap-y-2 sm:gap-y-6 lg:gap-y-6 xl:gap-y-10 grid grid-cols-1 ss:grid-cols-2 sm:grid-cols-2 lg:grid-cols-2 place-items-center">
+        {ServicesDetail.map((item) => (
+          <div
+            key={item.id}
+            className="serviceCard h-[250px] xs:h-[260px] ss:h-[260px] sm:h-[280px] lg:h-[280px] xl:h-[350px] bg-secondary w-full rounded-[2rem] p-4 xs:p-4 ss:px-4 ss:py-4 sm:px-4 sm:py-4 lg:px-8 xl:px-12 lg:pb-4 xl:py-4 flex flex-col justify-end"
+          >
+            <div className="h-[95%] lg:h-[90%] flex flex-col justify-between gap-y-3 xs:gap-y-2 ss:gap-y-2 sm:gap-y-3 lg:gap-y-0">
+              <p className="text-white text-xs lg:text-sm xl:text-base font-Sora">
+                {item.description}
+              </p>
 
-            <div className="w-full flex flex-col justify-center items-start">
-              <h1 className="text-[1.3rem] leading-6 ss:text-2xl sm:text-2xl lg:text-4xl xl:text-6xl text-white font-Akira">
-                Kids
-              </h1>
-              <h1 className="text-[1.3rem] leading-6 ss:text-2xl sm:text-2xl lg:text-4xl xl:text-6xl text-white font-Akira">
-                Gymnastics
-              </h1>
+              <div className="w-full flex flex-col justify-center items-start">
+                <h1 className="text-[1.3rem] leading-6 ss:text-2xl sm:text-2xl lg:text-4xl xl:text-6xl text-white font-Akira">
+                  {item.title1}
+                </h1>
+                <h1 className="text-[1.3rem] leading-6 ss:text-2xl sm:text-2xl lg:text-4xl xl:text-6xl text-white font-Akira">
+                  {item.title2}
+                </h1>
+              </div>
             </div>
           </div>
-        </div>
+        ))}
       </div>
 
       <div
@@ -185,7 +122,7 @@ const Services = () => {
         </div>
       </div>
 
-      <div className="sm lg:h-[15vh] gap-2 xs:gap-2 ss:gap-4 sm:gap-6 lg:gap-8 grid grid-cols-1 ss:grid-cols-2 sm:grid-cols-4 lg:grid-cols-4 place-items-center">
+      <div className="gap-2 xs:gap-2 ss:gap-4 sm:gap-6 lg:gap-8 grid grid-cols-1 ss:grid-cols-2 sm:grid-cols-4 lg:grid-cols-4 place-items-center">
         <div className="dayPassCard w-full h-full bg-white text-secondary rounded-[1rem] p-1.5 xs:p-2 ss:p-2 sm:p-3 lg:px-6 lg:py-4 flex flex-col justify-center gap-y-2 ss:gap-y-8 sm:gap-y-8 lg:gap-y-8">
           <p className="font-Sora text-center text-base xs:text-lg ss:text-lg sm:text-xl lg:text-2xl xl:text-3xl">
             Day pass

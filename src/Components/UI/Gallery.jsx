@@ -54,8 +54,9 @@ const Gallery = () => {
 
   return (
     <div
+    id="gallery"
       ref={(el) => (gallerySection = el)}
-      className="py-8 ss:py-10 sm:py-10 lg:py-24 w-full"
+      className="py-8 ss:py-10 sm:py-10 lg:py-18 xl:py-20 w-full"
     >
       <div className="overflow-hidden mb-6">
         <p className="galleryH1 font-Akira font-bold pointer-events-none mb-2 xxs:text-2xl xs:text-4xl ss:text-5xl sm:text-6xl lg:text-7xl xl:text-[7rem] xs:leading-6 leading-[5rem] uppercase text-center text-white">

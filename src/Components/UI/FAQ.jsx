@@ -49,7 +49,7 @@ const FAQs = () => {
       .timeline({
         defaults: {
           ease: "expo.inOut",
-          duration: 1.2,
+          duration: 1.4,
         },
         scrollTrigger: {
           trigger: faqSection,
@@ -74,9 +74,9 @@ const FAQs = () => {
 
   return (
     <div
-      id="service"
+      id="faq"
       ref={(el) => (faqSection = el)}
-      className="py-8 xs:py-8 ss:py-10 sm:py-10 lg:py-6 xl:py-20 w-full"
+      className="py-8 xs:py-8 ss:py-10 sm:py-10 lg:py-18 xl:py-20 w-full"
     >
       <div className="w-full">
         <div className="overflow-hidden">
@@ -86,7 +86,7 @@ const FAQs = () => {
         </div>
 
         <div className="w-full ss:w-11/12 sm:w-11/12 lg:w-11/12 mx-auto overflow-hidden">
-          <div className="overflow-hidden xxs:my-4 xs:my-4 ss:mt-2 ss:mb-4 sm:mt-2 sm:mb-6 lg:my-6 xl:my-8 pb-2">
+          <div className="overflow-hidden my-6 xxs:my-6 xs:my-6 ss:my-6 sm:mt-4 sm:mb-12 lg:my-12 xl:my-16 pb-2">
             <p className="faqSectionP text-white font-Sora text-left pointer-events-none text-base xs:text-base ss:text-lg sm:text-xl lg:text-3xl xl:text-4xl ">
               General information
             </p>
@@ -130,7 +130,7 @@ const FAQs = () => {
         </div>
 
         <div className="w-full ss:w-11/12 sm:w-11/12 lg:w-11/12 mx-auto overflow-hidden">
-          <div className="overflow-hidden xxs:my-4 xs:my-4 ss:my-4 sm:my-6 lg:my-6 xl:my-8 pb-2">
+          <div className="overflow-hidden my-6 xxs:my-6 xs:my-6 ss:my-6 sm:mt-4 sm:mb-12 lg:my-12 xl:my-16 pb-2">
             <p className=" text-white font-Sora text-left pointer-events-none text-base xs:text-base ss:text-lg sm:text-xl lg:text-3xl xl:text-4xl ">
               Membership information
             </p>
