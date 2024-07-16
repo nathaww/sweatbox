@@ -42,7 +42,7 @@ const TestimonialSlider = () => {
               <p className="text-left my-4 font-Sora text-xs ss:text-xs sm:text-sm lg:text-sm xl:text-base">
                 {testimonial.description}
               </p>
-              <p className="text-center max-w-2xl mx-auto font-Akira text-sm xs:text-base ss:text-xl sm:text-2xl lg:text-2xl xl:text-4xl">
+              <p className="text-left w-full mx-auto font-Akira text-sm xs:text-base ss:text-xl sm:text-2xl lg:text-2xl xl:text-4xl">
                 {testimonial.message}
               </p>
               {/* <button
