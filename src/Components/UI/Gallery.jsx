@@ -23,7 +23,7 @@ const Gallery = () => {
 
     let size = gsap.matchMedia();
 
-    size.add("(max-width: 425px)", () => {
+    size.add("(max-width: 475px)", () => {
       gsap
         .timeline({
           scrollTrigger: {
@@ -54,7 +54,7 @@ const Gallery = () => {
 
   return (
     <div
-    id="gallery"
+      id="gallery"
       ref={(el) => (gallerySection = el)}
       className="py-8 ss:py-10 sm:py-10 lg:py-18 xl:py-20 w-full"
     >
@@ -64,7 +64,7 @@ const Gallery = () => {
         </p>
       </div>
 
-      <div className="ss:h-screen sm:h-screen lg:h-[150vh] lg:w-[90%] mx-auto grid grid-cols-2 ss:grid-cols-3 sm:grid-cols-3 lg:grid-cols-3 place-items-center gap-2 xs:gap-3 ss:gap-4 sm:gap-5 lg:gap-6">
+      <div className="min-h-screen xs:min-h-screen ss:min-h-screen sm:min-h-screen lg:h-[160vh] lg:w-[90%] mx-auto grid grid-cols-2 ss:grid-cols-3 sm:grid-cols-3 lg:grid-cols-3 place-items-center gap-2 xs:gap-3 ss:gap-4 sm:gap-5 lg:gap-6">
         <div className="rounded-[2rem] w-full h-full overflow-hidden relative">
           <img
             src="/Images/Gallery/1.webp"

@@ -97,13 +97,13 @@ const FAQs = () => {
             return (
               <div
                 key={items.question}
-                className="accord border-b border-gray-200 w-full mt-4 p-4 rounded-xl bg-white text-black"
+                className="accord border-b border-gray-200 w-full mt-4 p-1 ss:p-4 sm:p-4 lg:p-4 rounded-xl bg-white text-black"
               >
                 <button
                   className="flex items-center justify-between w-full p-4 focus:outline-none"
                   onClick={() => toggleAccordion(key)}
                 >
-                  <span className="text-base xs:text-base ss:text-xl sm:text-xl lg:text-xl xl:text-2xl font-Sora font-semibold text-gray-900">
+                  <span className="text-sm xs:text-sm ss:text-xl sm:text-xl lg:text-xl xl:text-2xl font-Sora font-semibold text-gray-900">
                     {items?.question}
                   </span>
                   <FaPlus

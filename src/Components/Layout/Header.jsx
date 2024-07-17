@@ -2,6 +2,7 @@ import { useState } from "react";
 import { gsap } from "gsap";
 import { motion, AnimatePresence } from "framer-motion";
 import { useGSAP } from "@gsap/react";
+import { FaTimes } from "react-icons/fa";
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -74,7 +75,7 @@ const Header = () => {
           className="headerLogo h-full w-16 xs:w-20 sm:w-20 lg:w-36 object-contain object-center"
         />
       </div>
-      <div className="lg:flex xl:flex hidden justify-center gap-x-8 items-center">
+      <div className="sm:flex lg:flex xl:flex hidden justify-center gap-x-8 items-center">
         {nav.map((item) => (
           <div key={item.name} className="text-sm font-Sora">
             <motion.a
@@ -126,7 +127,7 @@ const Header = () => {
           </div>
         ))}
       </div>
-      <div className="lg:hidden xl:hidden flex items-center">
+      <div className="sm:hidden lg:hidden xl:hidden flex items-center">
         <button
           className="text-white focus:outline-none"
           onClick={toggleMobileMenu}
@@ -170,6 +171,14 @@ const Header = () => {
                 {item.name}
               </motion.a>
             ))}
+            <button
+              name="close button"
+              type="button"
+              onClick={handleLinkClick}
+              className="text-white absolute top-4 right-4"
+            >
+              <FaTimes className="text-3xl ss:text-3xl"/>
+            </button>
           </motion.div>
         )}
       </AnimatePresence>

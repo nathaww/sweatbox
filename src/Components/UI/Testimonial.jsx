@@ -26,7 +26,7 @@ const TestimonialSlider = () => {
           Success Stories
         </p>
       </div>
-      <Carousel autoPlay={true} showStatus={false} showIndicators={false}>
+      <Carousel swipeable={false} infiniteLoop={true} autoPlay={true} showStatus={false} showIndicators={false}>
         {SuccessStories.map((testimonial, index) => (
           <div
             key={index}
@@ -45,12 +45,6 @@ const TestimonialSlider = () => {
               <p className="text-left w-full mx-auto font-Akira text-sm xs:text-base ss:text-xl sm:text-2xl lg:text-2xl xl:text-4xl">
                 {testimonial.message}
               </p>
-              {/* <button
-                className="bg-secondary rounded-3xl text-white py-3 px-6"
-                onClick={() => handleReadMore(testimonial)}
-              >
-                Read More
-              </button> */}
             </div>
             <div className="imgCar w-full ss:w-1/2 sm:w-1/3 lg:w-1/3 h-full flex justify-center items-center overflow-hidden">
               <Carousel

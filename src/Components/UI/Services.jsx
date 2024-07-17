@@ -86,7 +86,7 @@ const Services = () => {
         {ServicesDetail.map((item) => (
           <div
             key={item.id}
-            className="serviceCard h-[250px] xs:h-[260px] ss:h-[260px] sm:h-[280px] lg:h-[280px] xl:h-[350px] bg-secondary w-full rounded-[2rem] p-4 xs:p-4 ss:px-4 ss:py-4 sm:px-4 sm:py-4 lg:px-8 xl:px-12 lg:pb-4 xl:py-4 flex flex-col justify-end"
+            className="serviceCard xss:h-[250px] xs:h-[260px] ss:h-[260px] sm:h-[280px] lg:h-[280px] xl:h-[350px] bg-secondary w-full rounded-[2rem] p-4 xs:p-4 ss:px-4 ss:py-4 sm:px-4 sm:py-4 lg:px-8 xl:px-12 lg:pb-4 xl:py-4 flex flex-col justify-end"
           >
             <div className="h-[95%] lg:h-[90%] flex flex-col justify-between gap-y-3 xs:gap-y-2 ss:gap-y-2 sm:gap-y-3 lg:gap-y-0">
               <p className="text-white text-xs lg:text-sm xl:text-base font-Sora">
@@ -111,12 +111,12 @@ const Services = () => {
         className="w-full mt-4 xxs:mt-6 xs:mt-8 ss:mt-16 sm:mt-16 lg:mt-24"
       >
         <div className="overflow-hidden">
-          <p className="dayPassSectionH1 font-Akira font-bold pointer-events-none xxs:text-xl xs:text-xl ss:text-3xl sm:text-4xl lg:text-4xl xl:text-6xl uppercase text-center text-white">
+          <p className="dayPassSectionH1 font-Akira font-bold pointer-events-none  xxs:text-lg xs:text-xl ss:text-3xl sm:text-4xl lg:text-4xl xl:text-6xl uppercase text-center text-white">
             Not convinced yet ?
           </p>
         </div>
         <div className="overflow-hidden xxs:mb-3 xs:mb-4 ss:mt-2 ss:mb-4 sm:mt-2 sm:mb-6 lg:mt-6 lg:mb-10 xl:mt-6 xl:mb-10 pb-2">
-          <p className="dayPassSectionP font-Sora text-white text-center pointer-events-none text-base xs:text-base ss:text-xl sm:text-2xl lg:text-4xl xl:text-4xl ">
+          <p className="dayPassSectionP font-Sora text-white text-center pointer-events-none text-sm xs:text-sm ss:text-xl sm:text-2xl lg:text-4xl xl:text-4xl ">
             Get a glimpse with our Day Pass option
           </p>
         </div>

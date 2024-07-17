@@ -58,27 +58,27 @@ const Landing = () => {
         <div className="flex flex-col sm:flex-row lg:flex-row xl:flex-row items-end gap-y-4 pt-2">
           <div className="w-full h-full flex flex-col  items-start">
             <div className="overflow-hidden uppercase w-max">
-              <h1 className="landingH1 pointer-events-none text-4xl xxs:text-[1.8rem] xs:text-[2.4rem] xs:leading-[2.8rem] sm:text-5xl lg:text-7xl xl:text-8xl font-Akira font-extrabold">
+              <h1 className="landingH1 pointer-events-none text-4xl xss:leading-4 xxs:text-[1.9rem] xs:text-[2.4rem] xs:leading-[2.8rem] sm:text-5xl lg:text-7xl xl:text-8xl font-Akira font-extrabold">
                 You control
               </h1>
             </div>
             <div className="overflow-hidden uppercase w-max">
-              <h1 className="landingH1 pointer-events-none text-4xl xxs:text-[1.9rem] xs:text-[2.4rem] xs:leading-[2.8rem] sm:text-5xl lg:text-7xl xl:text-8xl font-Akira font-extrabold">
+              <h1 className="landingH1 pointer-events-none text-4xl xss:leading-4 xxs:text-[1.9rem] xs:text-[2.4rem] xs:leading-[2.8rem] sm:text-5xl lg:text-7xl xl:text-8xl font-Akira font-extrabold">
                 Your body!
               </h1>
             </div>
           </div>
-          <div className="flex flex-row lg:gap-x-2 justify-start w-full lg:justify-end items-center sm:w-3/5 lg:w-3/5 xl:w-3/5 h-full mb-3">
-            <div className="landingBtnSecondary pe-2 xs:pe-2">
+          <div className="group flex flex-row lg:gap-x-2 justify-start w-full lg:justify-end items-center sm:w-3/5 lg:w-3/5 xl:w-3/5 h-full mb-3">
+            <div className="landingBtnSecondary pe-2 group-hover:pe-0 duration-200 transition-all">
               <img
                 src="/Images/arrowSecondary.png"
                 className="w-7 xs:w-8 lg:w-14 xl:w-14"
                 alt="arrow image sweatbox"
               />
             </div>
-            <button className="landingBtnSecondary rounded-full font-Akira text-lg xs:text-2xl sm:text-3xl lg:text-3xl xl:text-[2.8rem] py-2 px-8 xs:py-3 xs:px-6 lg:px-12 lg:py-6 font-bold text-white bg-secondary">
+            <a href="#contactUs" className="landingBtnSecondary rounded-full font-Akira text-lg xs:text-xl sm:text-3xl lg:text-3xl xl:text-[2.8rem] py-2 px-8 xs:py-3 xs:px-6 lg:px-12 lg:py-6 font-bold text-white bg-secondary">
               Join Now
-            </button>
+            </a>
           </div>
         </div>
         <div className="overflow-hidden w-max mb-3 lg:mb-12 lg:mt-6">
@@ -95,20 +95,20 @@ const Landing = () => {
               <img
                 src="/Images/gym1.webp"
                 alt="landing image sweatbox"
-                className="landingImg h-full w-full object-cover object-center"
+                className="landingImg h-full w-full object-cover object-center rounded-[3rem]"
               />
             </div>
-            <div className="flex-1 flex flex-row justify-between items-center w-full gap-x-1">
+            <div className="group flex-1 flex flex-row justify-between items-center w-full gap-x-1">
               <div>
                 <img
                   src="/Images/arrowFilled.png"
                   alt="arrow image sweatbox"
-                  className="object-cover object-center w-20 lg:w-32 xl:w-44"
+                  className="object-cover object-center w-20 lg:w-32 xl:w-44 group-hover:rotate-90 transition-all duration-200"
                 />
               </div>
-              <button className="rounded-full w-full text-xl xss:text-xl xs:text-3xl sm:text-3xl lg:text-3xl xl:text-[2.5rem] font-Akira font-bold text-white bg-black p-4 xs:p-4 sm:p-4 lg:p-6 xl:py-12 xl:px-2">
+              <a href="#gallery" className="rounded-full w-full text-center text-xl xss:text-xl xs:text-3xl sm:text-3xl lg:text-3xl xl:text-[2.5rem] font-Akira font-bold text-white bg-black p-4 xs:p-4 sm:p-4 lg:p-6 xl:py-12 xl:px-2">
                 Gallery
-              </button>
+              </a>
             </div>
           </div>
           <div className="h-[70vh] lg:h-full w-full rounded-[3rem] overflow-hidden relative">

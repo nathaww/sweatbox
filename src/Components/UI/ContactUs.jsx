@@ -28,42 +28,42 @@ import {
     };
     return (
       <>
-        <div className="w-full px-10 py-20">
+        <div className="w-full p-2 xss:p-2 xs:p-2 ss:px-10 ss:py-20 sm:px-2 sm:py-20 lg:px-10 lg:py-20">
           <div
             id="contactUs"
-            className="flex flex-col ss:flex-row sm:flex-row lg:flex-row w-full justify-between items-center p-4"
+            className="flex flex-col ss:flex-col sm:flex-col lg:flex-row w-full justify-between gap-y-4 items-start p-4"
           >
-            <div>
+            <div className="mb-6">
               <img
                 alt="sweatbox logo"
                 src="/Images/logo.png"
-                className="headerLogo h-full w-16 xs:w-20 sm:w-20 lg:w-36 object-contain object-center"
+                className="headerLogo h-full w-20 xs:w-28 sm:w-20 lg:w-36 object-contain object-center"
               />
             </div>
             <div>
-              <h1 className="text-3xl xs:text-4xl ss:text-5xl text-white font-Akira mb-6">
+              <h1 className="text-xl xss:text-2xl xs:text-2xl ss:text-5xl sm:text-4xl text-white font-Akira mb-6">
                 Locations
               </h1>
-              <p className="flex items-center gap-2 text-white font-Sora text-lg xs:text-xl ss:text-2xl mb-6">
+              <p className="flex items-center gap-2 text-white font-Sora text-sm xss:text-base xs:text-lg ss:text-2xl mb-6">
                 <FaMapLocationDot />
                 Bole behind Sheger House
               </p>
-              <p className="flex items-center gap-2 text-white font-Sora text-lg xs:text-xl ss:text-2xl mb-6">
+              <p className="flex items-center gap-2 text-white font-Sora text-sm xss:text-base xs:text-lg ss:text-2xl mb-6">
                 <FaMapLocationDot />
                 Sarbet near South African Embassy
               </p>
             </div>
-            <div>
-              <h1 className="text-3xl xs:text-4xl ss:text-5xl text-white font-Akira mb-6">
+            <div className="flex flex-col justify-start">
+              <h1 className="text-xl xss:text-2xl xs:text-2xl ss:text-5xl sm:text-3xl text-white font-Akira mb-6">
                 Contact details
               </h1>
-              <p className="flex items-center gap-2 text-white font-Sora text-lg xs:text-xl ss:text-2xl mb-6">
+              <p className="flex items-center gap-2 text-white font-Sora text-sm xss:text-base xs:text-lg ss:text-xl mb-6">
                 <FaMailBulk />
-                Email: contact@sweatboxapg.com
+                contact@sweatboxapg.com
               </p>
-              <p className="flex items-center gap-2 text-white font-Sora text-lg xs:text-xl ss:text-2xl mb-6">
+              <p className="flex items-center gap-2 text-white font-Sora text-sm xss:text-base xs:text-lg ss:text-xl mb-6">
                 <FaPhone />
-                Phone: +251910657999, +251922863298
+                +251910657999, +251922863298
               </p>
             </div>
           </div>
@@ -93,7 +93,7 @@ import {
           </div>
         </div>
         <div className="w-full p-8">
-          <p className="text-white text-center text-lg xs:text-xl">
+          <p className="text-white text-center text-sm xs:text-sm ss:text-lg sm:text-lg  lg:text-lg">
             Sweatbox Apg 2024. All rights reserved.
           </p>
         </div>

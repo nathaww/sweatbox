@@ -107,7 +107,7 @@ const Section = () => {
         <div className="ss:w-[39%] sm:w-[39%] lg:w-[39%] xxs:w-full xs:w-full h-full flex flex-row justify-between">
           <div
             ref={(el) => (sectionImageSection = el)}
-            className="leftCard w-[72%] flex flex-col justify-between items-center bg-white h-full rounded-[2rem] p-4 xs:pt-6 ss:p-2 sm:p-4 lg:p-6 xl:p-7"
+            className="leftCard w-[72%] flex flex-col justify-between items-center bg-white h-full rounded-[2rem] p-4 xss:p-4 xs:pt-6 ss:p-2 sm:p-4 lg:p-6 xl:p-7"
           >
             <div className="overflow-hidden h-[80%] rounded-[2rem]">
               <img
@@ -116,7 +116,7 @@ const Section = () => {
                 className="sectionImg w-full h-full object-cover"
               />
             </div>
-            <p className="text-left w-full text-2xl xs:text-3xl ss:text-3xl sm:text-4xl lg:text-5xl xl:text-[4.1rem] leading-[1] font-bold font-Akira">
+            <p className="text-left w-full text-2xl xss:text-3xl xs:text-3xl ss:text-3xl sm:text-4xl lg:text-5xl xl:text-[4.1rem] leading-[1] font-bold font-Akira">
               Our <br /> Coaches
             </p>
           </div>
@@ -134,13 +134,13 @@ const Section = () => {
           </div>
         </div>
         <div className="ss:w-[59%] sm:w-[59%] lg:w-[59%] xxs:w-full xs:w-full h-full flex flex-col justify-between">
-          <div className="rightCard h-[48%] w-full bg-secondary rounded-[2rem] flex flex-col justify-end p-4 ss:p-6 sm:p-8 lg:p-8 xl:p-12">
+          <a href="#service" className="rightCard h-[48%] w-full bg-secondary rounded-[2rem] flex flex-col justify-end p-4 ss:p-6 sm:p-8 lg:p-8 xl:p-12">
             <p className="text-2xl ss:text-3xl sm:text-4xl lg:text-5xl xl:text-7xl text-start font-bold font-Akira text-white">
               Our Best <br />
               Activities
             </p>
-          </div>
-          <div className="rightCard h-[48%] w-full bg-white rounded-[2rem] flex flex-row items-end p-4 ss:p-6 sm:p-8 lg:p-8 xl:p-12">
+          </a>
+          <a href="#gallery" className="rightCard h-[48%] w-full bg-white rounded-[2rem] flex flex-row items-end p-4 ss:p-6 sm:p-8 lg:p-8 xl:p-12">
             <p className="text-2xl ss:text-3xl sm:text-4xl lg:text-5xl xl:text-7xl font-bold font-Akira text-black">
               Gym <br />
               Gallery
@@ -152,7 +152,7 @@ const Section = () => {
                 alt="arrow image sweatbox"
               />
             </div>
-          </div>
+          </a>
         </div>
       </div>
     </div>
