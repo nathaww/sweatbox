@@ -7,7 +7,12 @@ html {
 .landingImg {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
+  z-index: 0;
+  transform: translateY(0);
+  border-radius: 3rem;
+  -webkit-border-radius: 3rem;
+  -moz-border-radius: 3rem;
 }
-.imgCar .carousel-root .carousel{
+.imgCar .carousel-root .carousel {
   height: 100%;
 }

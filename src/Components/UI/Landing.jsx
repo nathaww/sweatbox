@@ -91,11 +91,11 @@ const Landing = () => {
           className="flex flex-col ss:flex-row sm:flex-row lg:flex-row xl:flex-row justify-between gap-4 lg:gap-8 items-center min-h-[70vh] ss:h-[70vh] sm:h-[70vh] lg:h-[70vh] xl:h-[70vh] lg:mb-6 xl:mb-8"
         >
           <div className="flex flex-col justify-between gap-4 lg:gap-7 items-center h-full w-full lg:w-[40%]">
-            <div className="rounded-[3rem] overflow-hidden w-full">
+            <div className="rounded-[3rem] overflow-hidden w-full h-full">
               <img
                 src="/Images/gym1.webp"
                 alt="landing image sweatbox"
-                className="landingImg h-full w-full object-cover object-center rounded-[3rem]"
+                className="landingImg h-full w-full object-cover object-center"
               />
             </div>
             <div className="group flex-1 flex flex-row justify-between items-center w-full gap-x-1">
