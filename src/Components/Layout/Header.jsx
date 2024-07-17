@@ -129,6 +129,8 @@ const Header = () => {
       </div>
       <div className="sm:hidden lg:hidden xl:hidden flex items-center">
         <button
+          name="close menu button"
+          type="button"
           className="text-white focus:outline-none"
           onClick={toggleMobileMenu}
         >
@@ -177,7 +179,7 @@ const Header = () => {
               onClick={handleLinkClick}
               className="text-white absolute top-4 right-4"
             >
-              <FaTimes className="text-3xl ss:text-3xl"/>
+              <FaTimes className="text-3xl ss:text-3xl" />
             </button>
           </motion.div>
         )}
