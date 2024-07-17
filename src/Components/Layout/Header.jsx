@@ -129,6 +129,7 @@ const Header = () => {
       </div>
       <div className="sm:hidden lg:hidden xl:hidden flex items-center">
         <button
+          aria-label="Close"
           name="close menu button"
           type="button"
           className="text-white focus:outline-none"
@@ -174,6 +175,7 @@ const Header = () => {
               </motion.a>
             ))}
             <button
+              aria-label="Close"
               name="close button"
               type="button"
               onClick={handleLinkClick}

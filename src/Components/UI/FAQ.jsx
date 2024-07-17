@@ -100,6 +100,8 @@ const FAQs = () => {
                 className="accord border-b border-gray-200 w-full mt-4 p-1 ss:p-4 sm:p-4 lg:p-4 rounded-xl bg-white text-black"
               >
                 <button
+                  aria-label="Close"
+                  type="button"
                   className="flex items-center justify-between w-full p-4 focus:outline-none"
                   onClick={() => toggleAccordion(key)}
                 >
@@ -144,6 +146,8 @@ const FAQs = () => {
                 className="accord border-b border-gray-200 w-full mt-4 p-4 rounded-xl bg-white text-black"
               >
                 <button
+                  aria-label="ToggleAccordion"
+                  type="button"
                   className="flex items-center justify-between w-full p-4 focus:outline-none"
                   onClick={() => toggleAccordion(key)}
                 >
