@@ -3,33 +3,43 @@ import { gsap } from "gsap";
 import { motion, AnimatePresence } from "framer-motion";
 import { useGSAP } from "@gsap/react";
 import { FaTimes } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 const Header = () => {
+  const { t, i18n } = useTranslation();
+  const [isOpen, setIsOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+    setIsOpen(false);
+  };
+
+  const toggleDropdown = () => setIsOpen((prev) => !prev);
 
   const nav = [
     {
-      name: "Home",
+      name: t("home"),
       link: "#",
     },
     {
-      name: "Service",
+      name: t("services"),
       link: "#service",
     },
     {
-      name: "Gallery",
+      name: t("gallery"),
       link: "#gallery",
     },
     {
-      name: "About Us",
+      name: t("about"),
       link: "#aboutUs",
     },
     {
-      name: "FAQ",
+      name: t("faq"),
       link: "#faq",
     },
     {
-      name: "Contact Us",
+      name: t("contact"),
       link: "#contactUs",
     },
   ];
@@ -67,8 +77,8 @@ const Header = () => {
   };
 
   return (
-    <div className="flex flex-row justify-between items-center text-white h-20 xs:h-20 lg:h-36 xl:h-36">
-      <div className="">
+    <div className="flex flex-row z-50 justify-between items-center text-white h-20 xs:h-20 lg:h-36 xl:h-36">
+      <div>
         <img
           alt="sweatbox logo"
           src="/Images/logo.png"
@@ -126,6 +136,39 @@ const Header = () => {
             </motion.a>
           </div>
         ))}
+        <div className="relative nav z-50">
+          <button
+            onClick={toggleDropdown}
+            className="px-4 py-2 bg-secondary text-white rounded-full"
+          >
+            {t("lang")}
+          </button>
+
+          <AnimatePresence>
+            {isOpen && (
+              <motion.div
+                initial={{ opacity: 0, y: -10 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -10 }}
+                transition={{ duration: 0.3 }}
+                className="absolute z-50 right-0 w-32 bg-primary border border-black rounded-lg shadow"
+              >
+                <button
+                  onClick={() => changeLanguage("en")}
+                  className=" text-white block w-full px-4 py-2 text-left hover:bg-zinc-900 rounded-lg"
+                >
+                  {t("eng")}
+                </button>
+                <button
+                  onClick={() => changeLanguage("am")}
+                  className=" text-white block w-full px-4 py-2 text-left hover:bg-zinc-900 rounded-lg"
+                >
+                  {t("amh")}
+                </button>
+              </motion.div>
+            )}
+          </AnimatePresence>
+        </div>
       </div>
       <div className="sm:hidden lg:hidden xl:hidden flex items-center">
         <button
@@ -174,6 +217,39 @@ const Header = () => {
                 {item.name}
               </motion.a>
             ))}
+            <div className="relative nav z-50">
+              <button
+                onClick={toggleDropdown}
+                className="px-4 py-2 bg-secondary text-white rounded-full"
+              >
+                {t("lang")}
+              </button>
+
+              <AnimatePresence>
+                {isOpen && (
+                  <motion.div
+                    initial={{ opacity: 0, y: -10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -10 }}
+                    transition={{ duration: 0.3 }}
+                    className="absolute z-50 right-0 w-32 bg-primary border border-black rounded-lg shadow"
+                  >
+                    <button
+                      onClick={() => changeLanguage("en")}
+                      className=" text-white block w-full px-4 py-2 text-left hover:bg-zinc-900 rounded-lg"
+                    >
+                      {t("eng")}
+                    </button>
+                    <button
+                      onClick={() => changeLanguage("am")}
+                      className=" text-white block w-full px-4 py-2 text-left hover:bg-zinc-900 rounded-lg"
+                    >
+                      {t("amh")}
+                    </button>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </div>
             <button
               aria-label="Close"
               name="close button"

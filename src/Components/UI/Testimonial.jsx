@@ -9,11 +9,6 @@ const TestimonialSlider = () => {
   const [open, setOpen] = useState(false);
   const [selectedTestimonial, setSelectedTestimonial] = useState(null);
 
-//   const handleReadMore = (testimonial) => {
-//     setSelectedTestimonial(testimonial);
-//     setOpen(true);
-//   };
-
   const handleClose = () => {
     setOpen(false);
     setSelectedTestimonial(null);
@@ -26,7 +21,7 @@ const TestimonialSlider = () => {
           Success Stories
         </p>
       </div>
-      <Carousel swipeable={false} infiniteLoop={true} autoPlay={true} showStatus={false} showIndicators={false}>
+      <Carousel swipeable={false} infiniteLoop={true} autoPlay={true} showThumbs={false} showStatus={false} showIndicators={false}>
         {SuccessStories.map((testimonial, index) => (
           <div
             key={index}
