@@ -87,7 +87,7 @@ const Landing = () => {
         </div>
         <div className="overflow-hidden w-max mb-3 lg:mb-12 lg:mt-6">
           <p className="landingH1 font-Sora text-xl lg:text-4xl xl:text-5xl lg:mb-2">
-            {t("subheading")}
+            {t("subheading")}...
           </p>
         </div>
         <div

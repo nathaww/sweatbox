@@ -10,8 +10,81 @@
   "amh": "Amharic",
   "heading1": "You Control",
   "heading2": "Your body!",
-  "subheading": "Lets show you how...",
+  "subheading": "Lets show you how",
   "join": "Join now",
   "landingImageText1": "At Sweatbox, we’re not your average gym. As Addis Ababa’s premier performance center, we’re here to supercharge your fitness journey. Picture a life filled with energy and strength — that’s what we offer",
-  "landingImageText2": "A state of mind"
+  "landingImageText2": "A state of mind",
+
+  "heading3": "Dare to stand out!",
+  "ourCoaches": "Our Coaches",
+  "activity": "Our Best Activities",
+  "gym": "Gym",
+
+  "subheading2": "Training Plans",
+
+  "individual": {
+    "title1": "Individual",
+    "title2": "Plan",
+    "description": "With this plan, you get full access to our gym facilities and work out without a trainer. However, if you need any support, our trainers are readily available upon request. This option is perfect for those who enjoy independent workouts but might need a little support from time to time."
+  },
+  "personal": {
+    "title1": "Personal",
+    "title2": "Training",
+    "description": "On this plan, we have customized training programs that are carefully designed to help you reach your goals, whether it’s losing weight, getting fit, building On this plan, we have customized training programs that are carefully designed strength, or developing your skills in boxing or kickboxing. You’ll work with a dedicated trainer matched to your goals, preferences, and schedule, with options for 1-on-1, 2-on-1, or 3-on-1 sessions."
+  },
+  "group": {
+    "title1": "Group",
+    "title2": "Class",
+    "description": "Group Class Plan, a favorite among our members, is led by certified CrossFit trainers. This plan offers intense group workouts for up to 20 participants. Our structured sessions feature a mix of High-Intensity Interval Training (HIIT), Olympic weightlifting, Strength Training, Gymnastics and Cardiovascular Training."
+  },
+  "kids": {
+    "title1": "Kids",
+    "title2": "Gymnastics",
+    "description": "Let your kids discover the joy of movement and build confidence with our Kids Gymnastics program. Led by an experienced gymnast, children will learn fundamental gymnastics skills in a safe and supportive environment. From balancing to tumbling, each session fosters physical development and coordination while promoting teamwork and fun."
+  },
+  "subheading3": "Not Convinced yet ?",
+  "subheading4": "Get a glimpse with our Day Pass option",
+  "dayPass": "Day Pass",
+  "etb": "ETB",
+  "trainer": "With Trainer",
+  "groupClass": "Group CLass",
+  "boxing": "Boxing/KickBoxing",
+  "story": "Our Story",
+  "meetOurTeam": "Meet our team",
+  "aboutUs": "This is the story of how Sweatbox APG, founded by Getachew Melese, transformed from a one-man operation into a thriving fitness movement. It’s a testament to the power of resilience, community, and a shared passion for health and wellness. Join us as we take you through our journey, from those initial steps to becoming a household name. We invite you to be a part of our ever-growing family and write history with us!",
+  "team": {
+    "getachew": {
+      "firstName": "Getachew",
+      "lastName": "Melese",
+      "position": "Founder and CEO"
+    },
+    "nathan": {
+      "firstName": "Nathan",
+      "lastName": "Abebe",
+      "position": "Branch Manager"
+    },
+    "samrawit": {
+      "firstName": "Samrawit",
+      "lastName": "Tamirat",
+      "position": "Medical Doctor and Trainer"
+    },
+    "woinshet": {
+      "firstName": "Woinshet",
+      "lastName": "Tesfaye",
+      "position": "Branch Manager"
+    },
+    "fasika": {
+      "firstName": "Fasika",
+      "lastName": "Mekbib",
+      "position": "Assistant Manager"
+    },
+    "eleni": {
+      "firstName": "Eleni",
+      "lastName": "Mekuria",
+      "position": "Nutritionist and Dietitian"
+    }
+  },
+  "FAQ": "Frequently asked questions",
+  "generalInfo": "General Information",
+  "membershipInfo": "Membership Information"
 }

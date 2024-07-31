@@ -1,45 +1,31 @@
+
 export const ServicesDetail = [
   {
     id: "1",
-    title1: "Individual",
-    title2: "Plan",
-    description: `With this plan, you get full access to our gym facilities and work
-              out without a trainer. However, if you need any support, our
-              trainers are readily available upon request. This option is
-              perfect for those who enjoy independent workouts but might need a
-              little support from time to time.`,
+    title1Key: "individual.title1",
+    title2Key: "individual.title2",
+    descriptionKey: "individual.description",
   },
   {
     id: "2",
-    title1: "Personal",
-    title2: "Training",
-    description: `On this plan, we have customized training programs that are
-              carefully designed to help you reach your goals, whether it’s
-              losing weight, getting fit, building On this plan, we have
-              customized training programs that are carefully designed strength,
-              or developing your skills in boxing or kickboxing. You’ll work
-              with a dedicated trainer matched to your goals, preferences, and
-              schedule, with options for 1-on-1, 2-on-1, or 3-on-1 sessions.`,
+    title1Key: "personal.title1",
+    title2Key: "personal.title2",
+    descriptionKey: "personal.description",
   },
   {
     id: "3",
-    title1: "Group",
-    title2: "Class",
-    description:
-      "Group Class Plan, a favorite among our members, is led by certified CrossFit trainers. This plan offers intense group workouts for up to 20 participants. Our structured sessions feature a mix of High-Intensity Interval Training (HIIT), Olympic weightlifting, Strength Training, Gymnastics and Cardiovascular Training.",
+    title1Key: "group.title1",
+    title2Key: "group.title2",
+    descriptionKey: "group.description",
   },
   {
     id: "4",
-    title1: "Kids",
-    title2: "Gymnastics",
-    description: `Let your kids discover the joy of movement and build confidence
-              with our Kids Gymnastics program. Led by an experienced gymnast,
-              children will learn fundamental gymnastics skills in a safe and
-              supportive environment. From balancing to tumbling, each session
-              fosters physical development and coordination while promoting
-              teamwork and fun.`,
+    title1Key: "kids.title1",
+    title2Key: "kids.title2",
+    descriptionKey: "kids.description",
   },
 ];
+
 
 export const GeneralFAQs = [
   {
@@ -129,48 +115,93 @@ export const MemberFAQs = [
   },
 ];
 
+// export const MeetTheTeam = [
+//   {
+//     id: 1,
+//     img: "/Images/Team/getachew.png",
+//     firstName: "GETACHEW",
+//     lastName: "MELESE",
+//     position: "Founder and CEO",
+//   },
+//   {
+//     id: 2,
+//     img: "/Images/Gallery/1.webp",
+//     firstName: "Nathan",
+//     lastName: "Abebe",
+//     position: "Branch Manager",
+//   },
+//   {
+//     id: 3,
+//     img: "/Images/Team/samrawit.jpg",
+//     firstName: "Samrawit",
+//     lastName: "Tamirat",
+//     position: "Medical Doctor and Trainer",
+//   },
+//   {
+//     id: 4,
+//     img: "/Images/Team/woinshet.jpg",
+//     firstName: "Woinshet",
+//     lastName: "Tesfaye",
+//     position: "Branch Manager",
+//   },
+//   {
+//     id: 5,
+//     img: "/Images/Team/fasika.jpg",
+//     firstName: "Fasika",
+//     lastName: "Mekbib",
+//     position: "Assistant Manager",
+//   },
+//   {
+//     id: 6,
+//     img: "/Images/Team/eleni.jpg",
+//     firstName: "Eleni",
+//     lastName: "Mekuria",
+//     position: "Nutritionist and Dietitian",
+//   },
+// ];
+
 export const MeetTheTeam = [
   {
     id: 1,
     img: "/Images/Team/getachew.png",
-    firstName: "GETACHEW",
-    lastName: "MELESE",
-    position: "Founder and CEO",
+    firstNameKey: "team.getachew.firstName",
+    lastNameKey: "team.getachew.lastName",
+    positionKey: "team.getachew.position",
   },
   {
     id: 2,
     img: "/Images/Gallery/1.webp",
-    firstName: "Nathan",
-    lastName: "Abebe",
-    position: "Branch Manager",
+    firstNameKey: "team.nathan.firstName",
+    lastNameKey: "team.nathan.lastName",
+    positionKey: "team.nathan.position",
   },
   {
     id: 3,
     img: "/Images/Team/samrawit.jpg",
-    firstName: "Samrawit",
-    lastName: "Tamirat",
-    position: "Medical Doctor and Trainer",
+    firstNameKey: "team.samrawit.firstName",
+    lastNameKey: "team.samrawit.lastName",
+    positionKey: "team.samrawit.position",
   },
   {
     id: 4,
     img: "/Images/Team/woinshet.jpg",
-    firstName: "Woinshet",
-    lastName: "Tesfaye",
-    position: "Branch Manager",
+    firstNameKey: "team.woinshet.firstName",
+    lastNameKey: "team.woinshet.lastName",
+    positionKey: "team.woinshet.position",
   },
   {
     id: 5,
     img: "/Images/Team/fasika.jpg",
-    firstName: "Fasika",
-    lastName: "Mekbib",
-    position: "Assistant Manager",
+    firstNameKey: "team.fasika.firstName",
+    lastNameKey: "team.fasika.lastName",
+    positionKey: "team.fasika.position",
   },
   {
     id: 6,
     img: "/Images/Team/eleni.jpg",
-    firstName: "Eleni",
-    lastName: "Mekuria",
-    position: "Nutritionist and Dietitian",
+    firstNameKey: "team.eleni.firstName",
+    lastNameKey: "team.eleni.lastName",
+    positionKey: "team.eleni.position",
   },
 ];
 

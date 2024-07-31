@@ -2,10 +2,12 @@ import { useRef } from "react";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/src/ScrollTrigger";
+import { useTranslation } from "react-i18next";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const Gallery = () => {
+  const { t } = useTranslation();
   let gallerySection = useRef(null);
 
   useGSAP(() => {
@@ -60,7 +62,7 @@ const Gallery = () => {
     >
       <div className="overflow-hidden mb-6">
         <p className="galleryH1 font-Akira font-bold pointer-events-none mb-2 xxs:text-2xl xs:text-4xl ss:text-5xl sm:text-6xl lg:text-7xl xl:text-[7rem] xs:leading-6 leading-[5rem] uppercase text-center text-white">
-          Gallery
+          {t("gallery")}
         </p>
       </div>
 

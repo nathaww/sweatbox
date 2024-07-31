@@ -3,10 +3,12 @@ import { FaPlus } from "react-icons/fa";
 import { GeneralFAQs, MemberFAQs } from "../../data";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
+import { useTranslation } from "react-i18next";
 
 const FAQs = () => {
   let faqSection = useRef(null);
   const contentRefs = useRef({});
+  const { t } = useTranslation();
   const [openIndex, setOpenIndex] = useState(null);
 
   const toggleAccordion = (key) => {
@@ -81,14 +83,14 @@ const FAQs = () => {
       <div className="w-full">
         <div className="overflow-hidden">
           <p className="faqSectionH1 font-Akira font-bold pointer-events-none xxs:text-2xl xs:text-4xl ss:text-5xl sm:text-6xl lg:text-7xl xl:text-[7rem] xs:leading-8 leading-[5rem] uppercase text-center text-white">
-            Frequently asked questions
+            {t("FAQ")}
           </p>
         </div>
 
         <div className="w-full ss:w-11/12 sm:w-11/12 lg:w-11/12 mx-auto overflow-hidden">
           <div className="overflow-hidden my-6 xxs:my-6 xs:my-6 ss:my-6 sm:mt-4 sm:mb-12 lg:my-12 xl:my-16 pb-2">
             <p className="faqSectionP text-white font-Sora text-left pointer-events-none text-base xs:text-base ss:text-lg sm:text-xl lg:text-3xl xl:text-4xl ">
-              General information
+              {t("generalInfo")}
             </p>
           </div>
 
@@ -134,7 +136,7 @@ const FAQs = () => {
         <div className="w-full ss:w-11/12 sm:w-11/12 lg:w-11/12 mx-auto overflow-hidden">
           <div className="overflow-hidden my-6 xxs:my-6 xs:my-6 ss:my-6 sm:mt-4 sm:mb-12 lg:my-12 xl:my-16 pb-2">
             <p className=" text-white font-Sora text-left pointer-events-none text-base xs:text-base ss:text-lg sm:text-xl lg:text-3xl xl:text-4xl ">
-              Membership information
+              {t("membershipInfo")}
             </p>
           </div>
 

@@ -94,7 +94,7 @@ import {
         </div>
         <div className="w-full p-8">
           <p className="text-white text-center text-sm xs:text-sm ss:text-lg sm:text-lg  lg:text-lg">
-            Sweatbox Apg 2024. All rights reserved.
+            Sweatbox APG 2024. All rights reserved.
           </p>
         </div>
       </>

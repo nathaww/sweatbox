@@ -2,12 +2,14 @@ import { useRef } from "react";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/src/ScrollTrigger";
+import { useTranslation } from "react-i18next";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const Section = () => {
-  let sectionImageSection = useRef(null);
+  const { t } = useTranslation();
   let mainSection = useRef(null);
+  let sectionImageSection = useRef(null);
 
   useGSAP(() => {
     gsap
@@ -94,12 +96,12 @@ const Section = () => {
       <div className="w-full">
         <div className="overflow-hidden">
           <p className="sectionH1 font-Akira font-bold pointer-events-none  xxs:text-2xl xs:text-2xl ss:text-5xl sm:text-6xl lg:text-7xl xl:text-[7rem] xs:leading-6 leading-[5rem] uppercase text-center text-white">
-            Dare to stand out!
+            {t("heading3")}
           </p>
         </div>
         <div className="overflow-hidden xxs:mb-3 xs:my-4 ss:mt-2 ss:mb-4 sm:mt-2 sm:mb-6 lg:mt-6 lg:mb-10 xl:mt-8 xl:mb-16 pb-2">
           <p className="sectionP text-white text-center pointer-events-none text-base ss:text-xl sm:text-2xl lg:text-4xl xl:text-5xl ">
-            Lets show you how
+            {t("subheading")}
           </p>
         </div>
       </div>
@@ -117,7 +119,7 @@ const Section = () => {
               />
             </div>
             <p className="text-left w-full text-2xl xss:text-3xl xs:text-3xl ss:text-3xl sm:text-4xl lg:text-5xl xl:text-[4.1rem] leading-[1] font-bold font-Akira">
-              Our <br /> Coaches
+              {t("ourCoaches")}
             </p>
           </div>
           <div className="leftCard w-[23%] h-full bg-secondary flex flex-row justify-center items-center rounded-[2rem] relative ">
@@ -134,16 +136,21 @@ const Section = () => {
           </div>
         </div>
         <div className="ss:w-[59%] sm:w-[59%] lg:w-[59%] xxs:w-full xs:w-full h-full flex flex-col justify-between">
-          <a href="#service" className="rightCard h-[48%] w-full bg-secondary rounded-[2rem] flex flex-col justify-end p-4 ss:p-6 sm:p-8 lg:p-8 xl:p-12">
+          <a
+            href="#service"
+            className="rightCard h-[48%] w-full bg-secondary rounded-[2rem] flex flex-col justify-end p-4 ss:p-6 sm:p-8 lg:p-8 xl:p-12"
+          >
             <p className="text-2xl ss:text-3xl sm:text-4xl lg:text-5xl xl:text-7xl text-start font-bold font-Akira text-white">
-              Our Best <br />
-              Activities
+              {t("activity")}
             </p>
           </a>
-          <a href="#gallery" className="rightCard h-[48%] w-full bg-white rounded-[2rem] flex flex-row items-end p-4 ss:p-6 sm:p-8 lg:p-8 xl:p-12">
+          <a
+            href="#gallery"
+            className="rightCard h-[48%] w-full bg-white rounded-[2rem] flex flex-row items-end p-4 ss:p-6 sm:p-8 lg:p-8 xl:p-12"
+          >
             <p className="text-2xl ss:text-3xl sm:text-4xl lg:text-5xl xl:text-7xl font-bold font-Akira text-black">
-              Gym <br />
-              Gallery
+              {t("gym")} <br />
+              {t("gallery")}
             </p>
             <div className="w-full h-full flex justify-end items-center">
               <img
